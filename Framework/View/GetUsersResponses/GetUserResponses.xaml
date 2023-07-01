@@ -1,0 +1,224 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetUserResponses" this:GetUserResponses.in_ResponsesFormURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ResponsesFormURL" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1140,1933.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>GetUserResponses_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetUserResponses" sap:VirtualizedContainerService.HintSize="641.6,1868.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Trip planner form (Responses) - Google Sheets" sap:VirtualizedContainerService.HintSize="579.2,1756.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,1540" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="responsesPath" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_User_Responses" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" CvTextArgument="File" CvType="Text" DesignTimeRectangle="77, 180, 48, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'File'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' tag='DIV' type='' class='menu-button goog-control goog-inline-block' aaname='File' check:innerText='File' /&gt;" Guid="d990a646-cba5-4abb-993c-c8d98b44b309" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAhCAYAAACWY4jDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJ4SURBVFhH7ZjNaxNBGIf9U1oIOQSEigchJwtCwNKexUOKB/GQk1IopdBQCL1objlYT/Ug66UBaaBIFmFP7akBcUHYEthASKKpSdeGNLbl57ztbnY3O3a37FYn0sMDmZn3HeZhPjI7twYnZ/ifuBH61xz/OuXWW7iE+oNTGL0+DroGWu0Omt9/CMe3gy7aHQOHR32unEuoYxxxOxGVrtHzSA2FaGZabX6iyNBMcYXanUNugujQ8vMIHQ9OhN0zftCeci674QzxgscFy+FahdTtdeSLX+y6yiZWc+soV91xURBOqKqgkFtjg+MjVShOwfJkDBOTWZStPDnLyvN4o5rlCAknpG7gMRvs7ekZpB56yX+6iKMZKmxrdp7oQssyp+0yxl5I16HpjvKfhBo6duWPKJUY8h7U+kh7AP6KUHmF7aEVxa7jCVU28GSKxSXunS/Xuwn6PYNVuWnHBEAMoTo7OJIx3F/cgtow6xoaiosPmFQG0r5ZF4BIhLiHwvNNqGacn5D27ikb+BJKo0usvoUF1v+z97q7/hIiEZrNcI7t1wo0M85P6Lw9OY+F0T5yGcyy/pMvd+xcHyIRCrfkNLxNs/a5zIiMTf6D48j3QQAhsz0tDZdoGIQQqpWWEHeUh+h0E5GgXOGKJIRQs7GHwlwM8VQWxcrFMV37uoNCOoGJ6VdQrJMvAGIIEexemH90h9WzWJN46gWkz46YAIQTugZqVXar2GdUr/aHaiGcUFhuhETHI0Tf5LzAcYDeQrhC9HrCSxAdehT1CBH0LsdLEB0aN1eIZqn7s8dNEpEWg1566fmaK0SQFBmLvPxoz9Cj6OjMWLiExp8z/AbGrIX52bCKiQAAAABJRU5ErkJggg==" InformativeScreenshot="a3c1dae9baf00c0ecb23855a5b260909.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Trip planner form (Responses)" CvType="Text" DesignTimeRectangle="77, 147, 325, 30" ElementType="InputBox" FriendlyName="'Trip planner'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='docs-title-input' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click download" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" CvTextArgument="Download" CvType="Text" DesignTimeRectangle="77, 478, 400, 40" DesignTimeScaleFactor="1.25" FriendlyName="'Download►'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' css-selector='body&amp;gt;div&amp;gt;div' idx='76' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' type='' class='goog-menuitem apps-menuitem goog-submenu' tag='DIV' aaname='' check:innerText='Download&amp;#xD;&amp;#xA;►' /&gt;" Guid="a2a20577-77e5-43e4-9007-a7f346ee0865" ImageBase64="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" InformativeScreenshot="42493b8b0937b412c157874d474585ca.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Email" CvType="Text" DesignTimeRectangle="125, 447, 52, 21" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl aria-label='Email e' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Email e' tag='SPAN' type='' class='goog-menuitem-label' aaname='mail' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAZCAYAAABkdu2NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI3SURBVFhH7ZbfS1NhGMf7UwoUBQMFf2EZA1FKQknFC6XCm2QI5tL0TqK5mQrWTW50I0GN6UxBvVHQwmk4b9UgUYbabgZzMnbaD2z75vP6vtLcZqCeMzfOF14O5znPe57nc87zvs97AxkuFTDdpQKmu1TAVMnlckGrbcP0zCy3AAODQ3hU14ADr5db/q8YwHHbBG7eyko66LlS2t3dw4Pqh7BYrNxyRYCFRaXsurLyPW7s7//inqnRlQDeLddge3uHW66XFAMUfotfv6H9uQ45uXnILyiEsX8Afr8f6xsbePK0BVnZuSguKYPZ/AHBYJDPBiKRCOz2ZTQ1P2Y+NFevN8DrPeQeYDlQDIolpCggJVZ25x5GRz9iackOg6Gf2SiByqr7+PTZEmMXiUajUdgmviDvdj6G375jpT85OcXivuzuQSAQYH4pB6QECUDo6OgPentfxdklScKzVi06u7oRCoXg8/nQ0fECIyYzgxWaOd4taf1vbv5g97IBJto9adDLhZJ9CPKpqa2Dx+PhlhORnaDE30kkh2ONxaErSTbAZLvoz60t7nU+YKIEzgKGw2HW3+obGln5/vshZQdMlPhZXQaQStlofMPmU1m63W7mv7CwmBmATqcTGk1FTOIkxUpUbkCRuNU6xp+e7Kxj4zZlAM87yYh1eBlASfrNzpjUH9+PmDA3Nw+drvN0LcoOSEGSDQog/C4KSKKG/lrfd3pAoCa/uupgfVX8WVkAM1EqYLpLBUxvAX8Bdl0gjJSj7M0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OpenDocument (.ods)'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" CvTextArgument="Microsoft Excel (.xlsx)" CvType="Text" DesignTimeRectangle="479, 486, 325, 40" DesignTimeScaleFactor="1.25" FriendlyName="'Microsoft Excel (.xlsx)'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' css-selector='body&amp;gt;div&amp;gt;div' idx='574' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' type='' class='goog-menuitem apps-menuitem' tag='DIV' aaname='' check:innerText='Microsoft Excel (.xlsx)' /&gt;" Guid="2294ae4c-0b70-4015-89df-cbadde15a127" ImageBase64="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" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="OpenDocument (.ods)" CvType="Text" DesignTimeRectangle="499, 534, 286, 25" FriendlyName="'OpenDocument (.ods)'" FullSelectorArgument="&lt;webctrl class='goog-menuitem-content' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' idx='705' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='goog-menuitem-content' type='' aaname='' tag='DIV' check:innerText='OpenDocument (.ods)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="483.2,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[responsesPath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads"+"\Trip_planner_form_responses.xlsx"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_User_Responses]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="483.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Form_responses" WorkbookPath="[responsesPath]" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_User_Responses]" DisplayName="For Each Row in User_Responses" sap:VirtualizedContainerService.HintSize="483.2,425.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentResponse" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,308" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="s:String[]" Name="Countries_Array" />
+                      <Variable x:TypeArguments="s:String[]" Name="Languages_Array" />
+                      <Variable x:TypeArguments="s:String[]" Name="Interesting_Places_Array" />
+                      <Variable x:TypeArguments="s:String[]" Name="Hobbies_Array" />
+                      <Variable x:TypeArguments="x:String" Name="Vacation_start_date" />
+                      <Variable x:TypeArguments="x:String" Name="Budget" />
+                      <Variable x:TypeArguments="x:String" Name="Vacation_end_date" />
+                      <Variable x:TypeArguments="x:String" Name="Email" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Trip-Planner" sap:VirtualizedContainerService.HintSize="387.2,194.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_5" Priority="Normal" QueueType="Trip_Planning_Requests">
+                      <ui:AddQueueItem.ItemInformation>
+                        <InArgument x:TypeArguments="x:String" x:Key="email">[CurrentResponse(1).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="countries">[CurrentResponse(2).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="languages">[CurrentResponse(3).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="interesting_places">[CurrentResponse(4).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="hobbies">[CurrentResponse(5).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="budger">[CurrentResponse(6).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="vacation_start_date">[CurrentResponse(7).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="vacation_end_date">[CurrentResponse(8).ToString]</InArgument>
+                      </ui:AddQueueItem.ItemInformation>
+                    </ui:AddQueueItem>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_User_Responses]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="483.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Test" WorkbookPath="Data\Output\trip_planner_form_responses.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHrSURBVHhe7ZtNSgNBEIVn41JnFA8ieALBQ6TjzoVL115mRgQv4BFcDrjxFKIrd/7Ev+5M2p/wUaAVKOmpB18Wr14C/dKTrKr6ru2Lw/XNNpzUbeibdnJft5P3EhjOEvp0tq3zg43FcX+qOZvu1V24pQ8oim5yV3fT/cWxBzWn053Y0DO+oUxmnyXsXh2tNW24hlDZxJswfxyabnKMgRGQfhOq+O1f0nAchL6KV+GGh+WT/h1iAeGBhhokUd6SKr48LptaJFHekvQIPNFAgyTKWxJvwOr//yVR3hIvIL7Mlk0tkihvSfoNeKGBBkmUtyQ9Aq800CCJ8pakG/BGAw2SKG+JF0CmFkmUt8QLIFOLJMpb4gWQmSlFdLaMF0BmphTR2TJeAJmZUkRny3gBZGZKEZ0tIxbwVyRR3hIvgEwtkihviRdAphZJlLfECyBTiyTKW+IFkKlFEuUt8QLI1CKJ8pZ4AWRqkUR5S7wAMrVIorwlXgCZWiRR3hIvgEwtkihviRdAphZJlLfECyBTiyTKW+IFkKlFEuUt8QLI1CKJ8pZ4AWRqkUR5S6qSFiR/y7Ay04aehuMg9NWwKkvD8pmvzaXlwTqtk0KgaPLiZFJaI43myhcn/jFfq7NZ8xLGcBNoeTorXYlxrc9X1QelM/I7M6qjugAAAABJRU5ErkJggg==" InformativeScreenshot="13241a4f9fd5e841ffe785c2928fa6ea.jpg" Selector="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" Title="Trip planner form (Responses) - Google Sheets" Url="[in_ResponsesFormURL]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
