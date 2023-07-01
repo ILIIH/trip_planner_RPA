@@ -137,6 +137,40 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/View/GetSubscribersEmails/GetSubscribersEmails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Form_Results_URL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/View/GetUsersResponses/GetUserResponses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Sequence_3",
+        "Vacation_end_date&Sequence_3",
+        "Vacation_start_date&Sequence_3",
+        "Budget&Sequence_3",
+        "end_date&Sequence_3",
+        "Hobbies_Array&Sequence_3",
+        "Interesting_Places_Array&Sequence_3",
+        "Languages_Array&Sequence_3",
+        "Countries_Array&Sequence_3",
+        "dt_User_Responses&Sequence_2",
+        "responsesPath&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ResponsesFormURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
