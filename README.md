@@ -27,27 +27,27 @@ Our trip planner robot allows you to select your trip preferences. Once you prov
 
 With the usual approach, an employee of a travel agency spends from one to two hours to select the most suitable offer for one buyer. By visiting all the sites shown in the AS - IS diagram.
 
-![AS IS DIAGRAM](Documentation/images/as-is-diagram.png)
+![AS - IS diagram](Documentation/images/as-is-diagram.png)
 
 ## **3. TO - BE diagram:**
 
-This process can be easily automated with our robot.
+This process can be easily automated by our robot.
 
-![TO BE DIAGRAM](Documentation/images/to-be-diagram.png)
+![TO - BE diagram](Documentation/images/to-be-diagram.png)
 
 ## **4. Software architecture overview:**
 
 On a high-level view of the architecture of our robot, you can see that there are 7 feature sub-modules, each of which corresponds to one sprint. Separately, Dispatcher and Performer were developed for each of the modules.
 
-The most independent module is Core . As you can see from the diagram, it is the most independent module and contains 2 layers:
+Core Modeule . As you can see from the diagram, it is the most independent module which contains 2 layers:
 
-1.  UI contains sequences that can be used many times in different modules and that interact with the user interface
-2.  Data contains sequences that can be used many times in different modules and that interact exclusively with data
+1.  UI - contains processes that can be used many times in different modules and that interact with the user interface
+2.  Data - contains processes that can be used many times in different modules and that interact exclusively with data
 
-The Database module contains sequences of interaction with a relational database and consists of two layers:
+The Database module. This modile contains sequences of interaction with a relational database and consists of two layers:
 
-1.  Tables - encapsulates the logic of creating and managing models
-2.  DAO (Data Access Object) contains the logic of interaction with data in tables
+1.  Tables - encapsulates the logic of creating and managing databases tables
+2.  DAO (Data Access Object) - contains the logic of interaction with data that contains in data tables
 
 The Data Analytics module contains the neural network training logic and the data analysis logic; it consists of 2 layers:
 
@@ -55,6 +55,18 @@ The Data Analytics module contains the neural network training logic and the dat
 2.  Calculations - contains the calculation logic for data analysis
 
 ![ARCHITECTURE DIAGRAM](Documentation/images/architecture_diagram.png)
+
+Consider the architecture of the lower level, each feature module consists of three layers:
+
+1.  Dispatcher - it delivers data from different sources
+2.  Performer - processes data provided by DispatcherEach of these salts is divided into sublayers
+    - Model - it contains sequences that directly interact with data models, transform and process them
+    - View - there are sequences that interact with I / O interfaces
+    - Controller - there are sequences that connect Model and View and perform intermediate data manipulations
+3.  Tests - here the testing sequences can be divided into 3 sub-layers:
+    - UI tests - they test the correct interaction of processes with a visual display
+    - Integration tests - test the correctness of the interaction between Model , View , Controller under layers
+    - Unit testing - tests each sequence in isolation for a specific job
 
 ![FEATURE ARCHITECTURE DIAGRAM](Documentation/images/feature_architecture_diagram.png)
 
