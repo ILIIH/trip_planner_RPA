@@ -1,2 +1,13 @@
 .local/
 .screenshots/
+.local/AllDependencies.json
+.local/PackageCache.json
+.local/ProjectSettings.json
+.local/TripPlanner.nuget.props
+.local/dataManagerElementsOrder.json
+.local/db/references.db
+.local/install/TripPlanner.Framework.View.GetSubscribersEmails_GetSubscribersEmails.dll
+.local/install/TripPlanner.Mapper.json
+.local/install/TripPlanner.dll
+.local/install/TripPlanner_Expressions.Framework.View.GetSubscribersEmails_GetSubscribersEmails.dll
+.local/nuget.cache
