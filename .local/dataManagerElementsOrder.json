@@ -142,11 +142,16 @@
       "Path": "Framework/View/GetSubscribersEmails/GetSubscribersEmails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ExtractDataTable&Sequence_1"
+        "EmailMatches&Sequence_6",
+        "RegistratedEmailsItems&Sequence_4",
+        "newPassword&Sequence_1",
+        "logPassword&Sequence_1",
+        "dt_mails&Sequence_4",
+        "logEmail&Sequence_1",
+        "MailsMessages&Sequence_1",
+        "password&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [
-        "in_Form_Results_URL"
-      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -154,17 +159,16 @@
       "Path": "Framework/View/GetUsersResponses/GetUserResponses.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Email&Sequence_3",
-        "Vacation_end_date&Sequence_3",
+        "responsesPath&Sequence_2",
+        "dt_User_Responses&Sequence_2",
+        "Countries_Array&Sequence_3",
+        "Languages_Array&Sequence_3",
+        "Interesting_Places_Array&Sequence_3",
+        "Hobbies_Array&Sequence_3",
         "Vacation_start_date&Sequence_3",
         "Budget&Sequence_3",
-        "end_date&Sequence_3",
-        "Hobbies_Array&Sequence_3",
-        "Interesting_Places_Array&Sequence_3",
-        "Languages_Array&Sequence_3",
-        "Countries_Array&Sequence_3",
-        "dt_User_Responses&Sequence_2",
-        "responsesPath&Sequence_2"
+        "Vacation_end_date&Sequence_3",
+        "Email&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_ResponsesFormURL"
