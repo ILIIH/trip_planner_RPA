@@ -1,5 +1,3 @@
-.local/
-.screenshots/
 .local/AllDependencies.json
 .local/PackageCache.json
 .local/ProjectSettings.json
@@ -11,3 +9,5 @@
 .local/install/TripPlanner.dll
 .local/install/TripPlanner_Expressions.Framework.View.GetSubscribersEmails_GetSubscribersEmails.dll
 .local/nuget.cache
+.local/
+.screenshots/
