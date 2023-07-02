@@ -2,7 +2,7 @@
 
 ## **1. Overview.**
 
-Our trip planner robot allows you to select your trip preferences. Once you provide your preferences, the robot gathers all the necessary information about trip options. It then compiles a detailed email and sends it to your inbox, including all the relevant details. You can simply review the options presented in the email, choose your desired trip, and start enjoying your vacation.
+Our trip planner robot allows you to select your trip preferences. Once you provide your preferences, the robot gathers all the necessary information about trip options. It then compiles a detailed email and sends it to your inbox, including all the relevant details. You can simply review the options presented in the email, choose your desired trip, and start enjoying your vacation. You could find more information about processes in Documenation Folder.
 
 ## **Contents:**
 
@@ -25,36 +25,61 @@ Our trip planner robot allows you to select your trip preferences. Once you prov
 
 ## **2. AS - IS diagram:**
 
+With the usual approach, an employee of a travel agency spends from one to two hours to select the most suitable offer for one buyer. By visiting all the sites shown in the AS - IS diagram.
+
 ![AS IS DIAGRAM](Documentation/images/as-is-diagram.png)
 
 ## **3. TO - BE diagram:**
+
+This process can be easily automated with our robot.
 
 ![TO BE DIAGRAM](Documentation/images/to-be-diagram.png)
 
 ## **4. Software architecture overview:**
 
+On a high-level view of the architecture of our robot, you can see that there are 7 feature sub-modules, each of which corresponds to one sprint. Separately, Dispatcher and Performer were developed for each of the modules.
+
+The most independent module is Core . As you can see from the diagram, it is the most independent module and contains 2 layers:
+
+1.  UI contains sequences that can be used many times in different modules and that interact with the user interface
+2.  Data contains sequences that can be used many times in different modules and that interact exclusively with data
+
+The Database module contains sequences of interaction with a relational database and consists of two layers:
+
+1.  Tables - encapsulates the logic of creating and managing models
+2.  DAO (Data Access Object) contains the logic of interaction with data in tables
+
+The Data Analytics module contains the neural network training logic and the data analysis logic; it consists of 2 layers:
+
+1.  Machine learning - encapsulates the logic of interaction with a neural network
+2.  Calculations - contains the calculation logic for data analysis
+
+![ARCHITECTURE DIAGRAM](Documentation/images/architecture_diagram.png)
+
+![FEATURE ARCHITECTURE DIAGRAM](Documentation/images/feature_architecture_diagram.png)
+
 ## **5. Features.**
 
 ### User registration
 
-User registration contains information about the Mood Designs history and latest news and events organized by the Mood Designs team.
+With this function, the user creates an owl profile, fills in the data about the trips he wants to make, we save this data and process it in the future with the help of performers.
 
 ### Find accommodation
 
-Find accommodation contains information about the Mood Designs history and latest news and events organized by the Mood Designs team.
+In process
 
 ### Find airlines flights
 
-Find airlines flights contains information about the Mood Designs history and latest news and events organized by the Mood Designs team.
+In process
 
 ### Find local bus tickets
 
-Find local bus tickets contains information about the Mood Designs history and latest news and events organized by the Mood Designs team.
+In process
 
 ### Find attraction tickets
 
-Find attraction tickets contains information about the Mood Designs history and latest news and events organized by the Mood Designs team.
+In process
 
 ### Tables reservation in a restaurants
 
-Tables reservation in a restaurants contains information about the Mood Designs history and latest news and events organized by the Mood Designs team.
+In process
