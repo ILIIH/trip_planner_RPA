@@ -37,7 +37,7 @@ This process can be easily automated by our robot.
 
 ## **4. Software architecture overview:**
 
-On a high-level view of the architecture of our robot, you can see that there are 7 feature sub-modules, each of which corresponds to one sprint. Separately, Dispatcher and Performer were developed for each of the modules.
+High-level architecture. Our robot, you can see that there are 7 feature sub-modules, each of which corresponds to one sprint. Separately, Dispatcher and Performer were developed for each of the modules.
 
 Core Modeule . As you can see from the diagram, it is the most independent module which contains 2 layers:
 
@@ -56,7 +56,7 @@ The Data Analytics module contains the neural network training logic and the dat
 
 ![ARCHITECTURE DIAGRAM](Documentation/images/architecture_diagram.png)
 
-Consider the architecture of the lower level, each feature module consists of three layers:
+Lower level architecture. Each feature module consists of three layers:
 
 1.  Dispatcher - it delivers data from different sources
 2.  Performer - processes data provided by DispatcherEach of these salts is divided into sublayers
