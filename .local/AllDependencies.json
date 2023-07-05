@@ -20939,15 +20939,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Софія\\.nuget\\packages\\": {}
+    "C:\\Users\\linar\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "TripPlanner",
       "projectName": "TripPlanner",
-      "projectPath": "C:\\Users\\Софія\\Documents\\UiPath\\PROJECT\\trip_planner_RPA\\.local",
-      "packagesPath": "C:\\Users\\Софія\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Софія\\Documents\\UiPath\\PROJECT\\trip_planner_RPA\\.local"
+      "projectPath": "D:\\UIpath_projects\\TripPlanner\\.local",
+      "packagesPath": "C:\\Users\\linar\\.nuget\\packages\\",
+      "outputPath": "D:\\UIpath_projects\\TripPlanner\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -20978,7 +20978,7 @@
             "version": "[23.4.6, 23.4.6]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Софія\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "D:\\UIpath\\runtime.json"
       }
     },
     "runtimes": {
