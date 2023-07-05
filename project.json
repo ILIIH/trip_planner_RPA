@@ -57,6 +57,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "User_Registration_Module\\Tests\\UI Tests\\EmailRegistrationResponseTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d6abfddb-a581-4af4-8950-b9c374b0462f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "User_Registration_Module\\Tests\\Integrations Tests\\GetUserResponseIntegrationTestCase.xaml"
       }
     ],
     "modernBehavior": true
