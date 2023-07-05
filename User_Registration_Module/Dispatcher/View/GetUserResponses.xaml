@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetUserResponses" this:GetUserResponses.in_ResponsesFormURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetUserResponses" this:GetUserResponses.in_ResponsesFormURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_ResponsesFormURL" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1140,1933.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>535.2,1335.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetUserResponses_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,21 +110,21 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetUserResponses" sap:VirtualizedContainerService.HintSize="641.6,1868.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="In this sequince we receive all response from users about their trip preferencies and add this information to orchestrator queue and save lockaly to exel file (shoud be replaced in future to database solution)" DisplayName="GetUserResponses" sap:VirtualizedContainerService.HintSize="545.6,1270.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Trip planner form (Responses) - Google Sheets" sap:VirtualizedContainerService.HintSize="579.2,1756.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Open exel file with user responses in browser, donload it, extract data into orchestrator queue&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Trip planner form (Responses) - Google Sheets" sap:VirtualizedContainerService.HintSize="483.2,1098.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,1540" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,821.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="responsesPath" />
               <Variable x:TypeArguments="sd:DataTable" Name="dt_User_Responses" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
@@ -132,7 +132,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" CvTextArgument="File" CvType="Text" DesignTimeRectangle="77, 180, 48, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'File'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' tag='DIV' type='' class='menu-button goog-control goog-inline-block' aaname='File' check:innerText='File' /&gt;" Guid="d990a646-cba5-4abb-993c-c8d98b44b309" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAhCAYAAACWY4jDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJ4SURBVFhH7ZjNaxNBGIf9U1oIOQSEigchJwtCwNKexUOKB/GQk1IopdBQCL1objlYT/Ug66UBaaBIFmFP7akBcUHYEthASKKpSdeGNLbl57ztbnY3O3a37FYn0sMDmZn3HeZhPjI7twYnZ/ifuBH61xz/OuXWW7iE+oNTGL0+DroGWu0Omt9/CMe3gy7aHQOHR32unEuoYxxxOxGVrtHzSA2FaGZabX6iyNBMcYXanUNugujQ8vMIHQ9OhN0zftCeci674QzxgscFy+FahdTtdeSLX+y6yiZWc+soV91xURBOqKqgkFtjg+MjVShOwfJkDBOTWZStPDnLyvN4o5rlCAknpG7gMRvs7ekZpB56yX+6iKMZKmxrdp7oQssyp+0yxl5I16HpjvKfhBo6duWPKJUY8h7U+kh7AP6KUHmF7aEVxa7jCVU28GSKxSXunS/Xuwn6PYNVuWnHBEAMoTo7OJIx3F/cgtow6xoaiosPmFQG0r5ZF4BIhLiHwvNNqGacn5D27ikb+BJKo0usvoUF1v+z97q7/hIiEZrNcI7t1wo0M85P6Lw9OY+F0T5yGcyy/pMvd+xcHyIRCrfkNLxNs/a5zIiMTf6D48j3QQAhsz0tDZdoGIQQqpWWEHeUh+h0E5GgXOGKJIRQs7GHwlwM8VQWxcrFMV37uoNCOoGJ6VdQrJMvAGIIEexemH90h9WzWJN46gWkz46YAIQTugZqVXar2GdUr/aHaiGcUFhuhETHI0Tf5LzAcYDeQrhC9HrCSxAdehT1CBH0LsdLEB0aN1eIZqn7s8dNEpEWg1566fmaK0SQFBmLvPxoz9Cj6OjMWLiExp8z/AbGrIX52bCKiQAAAABJRU5ErkJggg==" InformativeScreenshot="a3c1dae9baf00c0ecb23855a5b260909.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -143,7 +143,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click download" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click download" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" CvTextArgument="Download" CvType="Text" DesignTimeRectangle="77, 478, 400, 40" DesignTimeScaleFactor="1.25" FriendlyName="'Download►'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' css-selector='body&amp;gt;div&amp;gt;div' idx='76' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' type='' class='goog-menuitem apps-menuitem goog-submenu' tag='DIV' aaname='' check:innerText='Download&amp;#xD;&amp;#xA;►' /&gt;" Guid="a2a20577-77e5-43e4-9007-a7f346ee0865" ImageBase64="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" InformativeScreenshot="42493b8b0937b412c157874d474585ca.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -154,7 +154,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OpenDocument (.ods)'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OpenDocument (.ods)'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49e8187d-d791-4dd7-9187-f0867f83bd20" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://docs.google.com/spreadsheets/d/1Z0t_X897YhCV-Ikaq8aX6QaoL6yyv9uecohTzx9cW-I/edit?resourcekey#gid=697072915" CvTextArgument="Microsoft Excel (.xlsx)" CvType="Text" DesignTimeRectangle="479, 486, 325, 40" DesignTimeScaleFactor="1.25" FriendlyName="'Microsoft Excel (.xlsx)'" FullSelectorArgument="&lt;webctrl aria-role='menuitem' css-selector='body&amp;gt;div&amp;gt;div' idx='574' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' type='' class='goog-menuitem apps-menuitem' tag='DIV' aaname='' check:innerText='Microsoft Excel (.xlsx)' /&gt;" Guid="2294ae4c-0b70-4015-89df-cbadde15a127" ImageBase64="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" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -165,60 +165,22 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <Assign sap:VirtualizedContainerService.HintSize="483.2,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[responsesPath]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads"+"\Trip_planner_form_responses.xlsx"]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_User_Responses]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="483.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Form_responses" WorkbookPath="[responsesPath]" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_User_Responses]" DisplayName="For Each Row in User_Responses" sap:VirtualizedContainerService.HintSize="483.2,425.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-              <ui:ForEachRow.Body>
-                <ActivityAction x:TypeArguments="sd:DataRow">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentResponse" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,308" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="s:String[]" Name="Countries_Array" />
-                      <Variable x:TypeArguments="s:String[]" Name="Languages_Array" />
-                      <Variable x:TypeArguments="s:String[]" Name="Interesting_Places_Array" />
-                      <Variable x:TypeArguments="s:String[]" Name="Hobbies_Array" />
-                      <Variable x:TypeArguments="x:String" Name="Vacation_start_date" />
-                      <Variable x:TypeArguments="x:String" Name="Budget" />
-                      <Variable x:TypeArguments="x:String" Name="Vacation_end_date" />
-                      <Variable x:TypeArguments="x:String" Name="Email" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Trip-Planner" sap:VirtualizedContainerService.HintSize="387.2,194.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_5" Priority="Normal" QueueType="Trip_Planning_Requests">
-                      <ui:AddQueueItem.ItemInformation>
-                        <InArgument x:TypeArguments="x:String" x:Key="email">[CurrentResponse(1).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="countries">[CurrentResponse(2).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="languages">[CurrentResponse(3).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="interesting_places">[CurrentResponse(4).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="hobbies">[CurrentResponse(5).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="budger">[CurrentResponse(6).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="vacation_start_date">[CurrentResponse(7).ToString]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="vacation_end_date">[CurrentResponse(8).ToString]</InArgument>
-                      </ui:AddQueueItem.ItemInformation>
-                    </ui:AddQueueItem>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEachRow.Body>
-            </ui:ForEachRow>
-            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_User_Responses]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="483.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Test" WorkbookPath="Data\Output\trip_planner_form_responses.xlsx" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="User_Registration_Module\Dispatcher\Model\SaveUsersResponses.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="User_Registration_Module\Dispatcher\Model\SaveUsersResponses.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
         <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHrSURBVHhe7ZtNSgNBEIVn41JnFA8ieALBQ6TjzoVL115mRgQv4BFcDrjxFKIrd/7Ev+5M2p/wUaAVKOmpB18Wr14C/dKTrKr6ru2Lw/XNNpzUbeibdnJft5P3EhjOEvp0tq3zg43FcX+qOZvu1V24pQ8oim5yV3fT/cWxBzWn053Y0DO+oUxmnyXsXh2tNW24hlDZxJswfxyabnKMgRGQfhOq+O1f0nAchL6KV+GGh+WT/h1iAeGBhhokUd6SKr48LptaJFHekvQIPNFAgyTKWxJvwOr//yVR3hIvIL7Mlk0tkihvSfoNeKGBBkmUtyQ9Aq800CCJ8pakG/BGAw2SKG+JF0CmFkmUt8QLIFOLJMpb4gWQmSlFdLaMF0BmphTR2TJeAJmZUkRny3gBZGZKEZ0tIxbwVyRR3hIvgEwtkihviRdAphZJlLfECyBTiyTKW+IFkKlFEuUt8QLI1CKJ8pZ4AWRqkUR5S7wAMrVIorwlXgCZWiRR3hIvgEwtkihviRdAphZJlLfECyBTiyTKW+IFkKlFEuUt8QLI1CKJ8pZ4AWRqkUR5S6qSFiR/y7Ay04aehuMg9NWwKkvD8pmvzaXlwTqtk0KgaPLiZFJaI43myhcn/jFfq7NZ8xLGcBNoeTorXYlxrc9X1QelM/I7M6qjugAAAABJRU5ErkJggg==" InformativeScreenshot="13241a4f9fd5e841ffe785c2928fa6ea.jpg" Selector="&lt;html app='msedge.exe' title='Trip planner form (Responses) - Google Sheets' /&gt;" Title="Trip planner form (Responses) - Google Sheets" Url="[in_ResponsesFormURL]" />
       </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
   </Sequence>
 </Activity>

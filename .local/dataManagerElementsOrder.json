@@ -142,14 +142,17 @@
       "Path": "Framework/View/GetSubscribersEmails/GetSubscribersEmails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "EmailMatches&Sequence_6",
-        "RegistratedEmailsItems&Sequence_4",
-        "newPassword&Sequence_1",
-        "logPassword&Sequence_1",
-        "dt_mails&Sequence_4",
-        "logEmail&Sequence_1",
+        "isEmailMatched&Sequence_4",
+        "EmailMatched&Sequence_4",
+        "isThisEmailCompleted&Sequence_15",
+        "MailQueueItem&Sequence_4",
+        "password&Sequence_1",
         "MailsMessages&Sequence_1",
-        "password&Sequence_1"
+        "logEmail&Sequence_1",
+        "logPassword&Sequence_1",
+        "newPassword&Sequence_1",
+        "dt_mails&Sequence_4",
+        "RegistratedEmailsItems&Sequence_4"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -159,19 +162,70 @@
       "Path": "Framework/View/GetUsersResponses/GetUserResponses.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "responsesPath&Sequence_2",
-        "dt_User_Responses&Sequence_2",
-        "Countries_Array&Sequence_3",
-        "Languages_Array&Sequence_3",
-        "Interesting_Places_Array&Sequence_3",
-        "Hobbies_Array&Sequence_3",
+        "Email&Sequence_3",
+        "Vacation_end_date&Sequence_3",
         "Vacation_start_date&Sequence_3",
         "Budget&Sequence_3",
-        "Vacation_end_date&Sequence_3",
-        "Email&Sequence_3"
+        "Hobbies_Array&Sequence_3",
+        "Interesting_Places_Array&Sequence_3",
+        "Languages_Array&Sequence_3",
+        "Countries_Array&Sequence_3",
+        "dt_User_Responses&Sequence_2",
+        "responsesPath&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_ResponsesFormURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Screenshot&Sequence_1",
+        "ScreenshotFileInfo&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "io_FilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "User_Registration_Module/Performer/UserRegistrationPerformer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/View/GetSubscribersEmails/IsListContainMail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_IsEmailMatched",
+        "out_FoundedItem",
+        "in_EmailAddressToFInd",
+        "in_MalisList"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

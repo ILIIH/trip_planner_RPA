@@ -46,45 +46,24 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "5d7ee8a6-6dff-4d4a-8b0e-8c8689fab2e1",
+        "testCaseId": "1e582039-0e07-436b-98c4-fc476d9fc000",
         "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "User_Registration_Module\\Tests\\Unit Tests\\IsListContainsMailTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "0f4e101b-5a32-41eb-b1bb-a34a707d7a7a",
+        "testCaseId": "84055c57-075f-41cc-ac9b-2a77f991332e",
         "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "User_Registration_Module\\Tests\\UI Tests\\EmailRegistrationResponseTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "922a074f-c54f-4cff-b34d-993a3f96acf8",
+        "testCaseId": "d6abfddb-a581-4af4-8950-b9c374b0462f",
         "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "78de479e-a649-4c94-a193-01e3d2d400e9",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\MainTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "05175116-70d8-4451-a2ef-c4bfe101deeb",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\ProcessTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "68c8ee3a-31fa-40cd-b627-5e9618d64554",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "User_Registration_Module\\Tests\\Integrations Tests\\GetUserResponseIntegrationTestCase.xaml"
       }
     ],
     "modernBehavior": true
