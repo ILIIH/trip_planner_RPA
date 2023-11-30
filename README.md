@@ -70,28 +70,3 @@ Lower level architecture. Each feature module consists of three layers:
 
 ![FEATURE ARCHITECTURE DIAGRAM](Documentation/images/feature_architecture_diagram.png)
 
-## **5. Features.**
-
-### User registration
-
-With this function, the user creates an owl profile, fills in the data about the trips he wants to make, we save this data and process it in the future with the help of performers.
-
-### Find accommodation
-
-In process
-
-### Find airlines flights
-
-In process
-
-### Find local bus tickets
-
-In process
-
-### Find attraction tickets
-
-In process
-
-### Tables reservation in a restaurants
-
-In process
